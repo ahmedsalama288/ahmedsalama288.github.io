@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  position: relative;
+  background-size: cover;
+  background-image: url("./images/pero-kalimero-9BJRGlqoIUk-unsplash.jpg");
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 50%);
+}
+
+#app {
+  z-index: 2;
+  height: 100vh;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  padding: 0px 20px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  color: black;
+}
+
+.entry {
+  width: 500px;
+  /* height: 350px; */
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  color: #ddd;
+}
+
+#entryHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+#date {
+  font-size: 28px;
+}
+
+#temp {
+  font-size: 30px;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+} 
+
+.headline {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 46px;
+  color: #ddd;
+}
+/* .title {
+} */
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+input {
+  display: block;
+  margin: auto;
+  height: 60px;
+  width: 320px;
+  max-width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #111;
+  width: 110px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #ddd;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 2px 4px 5px #444;
+  border: none;
+}
+h1 {
+  font-size: 36px;
+}
+
+textarea {
+  font-size: 23px;
+  font-family: "Oswald", sans-serif;
+  background-color: transparent;
+  color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  height: 60px;
+  width: 400px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #ddd;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ddd;
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ddd;
+  font-family: "Oswald", sans-serif;
+}
